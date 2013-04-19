@@ -26,12 +26,28 @@ MONOPOLY_GAME = { deeds: {
 
 # 1. Implement the method below
 def number_of_tokens
-  # Your Code Goes here
+  MONOPOLY_GAME[:tokens].count
 end
 
 # 2. Implement the method below.
 def sorted_list_of_tokens
-  # Your Code Goes here
+  MONOPOLY_GAME[:tokens].sort
+end
+
+def rent_for(input)
+  MONOPOLY_GAME[:deeds][input][:rent]
+end
+
+def price_for(input)
+  MONOPOLY_GAME[:deeds][input][:price]
+end
+
+def count_number_of_monopoly_cards
+  MONOPOLY_GAME[:cards].count
+end
+
+def pick_free_parking_card
+  MONOPOLY_GAME[:cards][1]
 end
 
 
